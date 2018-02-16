@@ -1,7 +1,7 @@
-# Bootstrap Sass Blank Theme
-Bootstrap Sass Blank Theme is a WordPress Blank Theme, with Bootstrap and Sass included. This theme is based on [Minimal Blank Theme](https://github.com/edouardl/minimal-blank-theme) for all the WordPress/PHP code and well inspired by [MonsieurPress](https://github.com/davidmanson/monsieurpress/) for the use of Gulp and some great hierarchical ideas.
+# The "WordPress Bootstrap Sass Blank" Theme
+Bootstrap Sass Blank Theme is a WordPress Blank Theme, with Bootstrap 4 and Sass included. This theme is based on [Minimal Blank Theme](https://github.com/edouardl/minimal-blank-theme) for all the WordPress/PHP code and well inspired by [MonsieurPress](https://github.com/davidmanson/monsieurpress/) for the use of Gulp and some great hierarchical ideas.
 
-The main purpose of Bootstrap Sass Blank Theme is to give you a complete theme architecture (with Boostrap and Sass including, like the name said) to start developping your own theme.
+The main purpose of Bootstrap Sass Blank Theme is to give you a complete theme architecture (with Boostrap 4 and Sass including, like the name said) to start developping your own theme.
 It's a blank theme, you don't need to delete any code, just add yours.
 
 
@@ -34,9 +34,12 @@ then you can start coding
 
 ## Optimizations
 ### Menus
-if your need full implementation of Boostrap Menu in WordPress, I recommand the great custom walker : https://github.com/wp-bootstrap/wp-bootstrap-navwalker
+if your need full implementation of Boostrap Menu in WordPress, I recommand the great custom walker: https://github.com/wp-bootstrap/wp-bootstrap-navwalker
 ### Boostrap-sass
-By default all modules are loaded, but you can create a bootstrap-custom in "assets/scss/vendors" and import only the modules you need. (don't forget to replace import of boostrap-sass/boostrap by your custom bt in assets/scss/style.scss file)
+By default all modules are loaded, but you can comment any Bootstrap module you don't need in assets/scss/style.scss
+Morover, to create your own Bootstrap theme, you can use Bootstrap Magic to generate your variables.scss file
+### WordPress snippets
+If you're not comfortable with WordPress snippets to add components and customize them, you can use [WP Hasty](https://www.wp-hasty.com/) to generate them
 
 
 ## Known issue(s)
@@ -44,5 +47,9 @@ By default all modules are loaded, but you can create a bootstrap-custom in "ass
 
 
 ## Changelog
+Version 1.1
+- Update to Boostrap 4
+- change the theme css file from style.css to dist/css/theme.css
+
 Version 1.0
 - Initial
