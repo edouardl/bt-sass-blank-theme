@@ -14,7 +14,7 @@ var gulp = require('gulp'),
 var source = 'assets/';
 var dest = 'dist/';
 
-var boostrapSassSrc = './node_modules/bootstrap-sass/';
+var boostrapSassSrc = './node_modules/bootstrap/';
 
 // Fonts, including bootstrap fonts
 var fonts = {
@@ -45,7 +45,8 @@ gulp.task('sass', ['fonts'], function() {
         .pipe( sass( eyeglass() ) )
         .pipe( autoprefixer() )
         .pipe( cssmin() )
-        .pipe( gulp.dest( '.' ) )
+        .pipe( rename('theme.css') )
+        .pipe( gulp.dest( dest + 'css' ) )
         .pipe( livereload() );
 });
 

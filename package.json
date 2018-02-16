@@ -10,7 +10,7 @@
   "author": "Edouard Labre",
   "license": "ISC",
   "devDependencies": {
-    "bootstrap-sass": "^3.3.7",
+    "bootstrap": "^4.0.0",
     "eyeglass": "^1.2.1",
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^3.1.1",

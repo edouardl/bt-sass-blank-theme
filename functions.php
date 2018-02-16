@@ -3,6 +3,9 @@
 include('inc/enqueues.php');
 include('inc/excerpt.php');
 
+/**
+* Don't hesitate to use the WP code snippet generator Hasty : https://www.wp-hasty.com/
+*/
 
  /**
   * Declare theme support
@@ -72,6 +75,15 @@ add_action( 'widgets_init', 'theme_register_sidebars' );
  *
  */
 function theme_set_editor_style() {
-    add_editor_style( get_stylesheet_directory_uri() . '/style.css' );
+    add_editor_style( get_stylesheet_directory_uri() . '/dist/css/theme.css' );
 }
 //add_action( 'admin_init', 'theme_set_editor_style' ); //@TODO : Uncomment if you use it
+
+/**
+* Remove emojis CSS and JS
+*/
+function theme_remove_emojis() {
+  remove_action( 'wp_print_styles', 'print_emoji_styles' );
+  remove_action( 'wp_head', 'print_emoji_detection_script', 99 );
+}
+//add_action( 'init', 'theme_remove_emojis' ); //@TODO: Uncomment if you don't need emojis and want to optimize your site

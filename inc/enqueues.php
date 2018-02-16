@@ -11,8 +11,13 @@ function theme_enqueues_styles_scripts() {
 		wp_enqueue_script( 'comment-reply' );
 	}
 
+	// Popper
+	wp_enqueue_script('popper', 'https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js');
+
 	// Bootstrap : load js part from cdn
-	wp_enqueue_script( 'bootstrap', 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js' , array('jquery'), '3.3.7', true);
+	wp_enqueue_script( 'bootstrap', 'https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js' , array('jquery', 'popper'), '4.0.0', true);
+
+
 
 	// @TODO : Uncomment what you need
 	// Animate CSS
@@ -28,7 +33,7 @@ function theme_enqueues_styles_scripts() {
 	//wp_enqueue_script( 'libs', get_stylesheet_directory_uri() . '/dist/js/libs.js' , array(), '1.0', true); //@TODO : uncomment if you added js librairies
 
 	// Default theme stylesheet
-	wp_enqueue_style( 'style', get_stylesheet_directory_uri() . '/style.css' );
+	wp_enqueue_style( 'theme', get_stylesheet_directory_uri() . '/dist/css/theme.css' );
 
 	// Default js of your theme to add your own js scripts, add dependances if needed
 	wp_enqueue_script( 'main', get_stylesheet_directory_uri() . '/dist/js/main.js' , array(), '1.0', true);
@@ -85,7 +90,7 @@ function theme_register_jquery_from_cdn() {
 	theme_deregister_jquery_from_wp_core();
 
 	// Register from google cdn
-	wp_register_script( 'jquery', 'http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js', null, '1.11.3' );
-	wp_register_script( 'jquery-ui-core', 'https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js', array( 'jquery' ), '1.11.4', true);
+	wp_register_script( 'jquery', 'https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js' );
+	wp_register_script( 'jquery-ui-core', 'https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js', array( 'jquery' ), '1.12.1', true);
 }
 add_action('wp_head', 'theme_register_jquery_from_cdn', 1 );
