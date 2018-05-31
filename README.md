@@ -37,7 +37,7 @@ then you can start coding
 if your need full implementation of Boostrap Menu in WordPress, I recommand the great custom walker: https://github.com/wp-bootstrap/wp-bootstrap-navwalker
 ### Boostrap-sass
 By default all modules are loaded, but you can comment any Bootstrap module you don't need in assets/scss/style.scss
-Morover, to create your own Bootstrap theme, you can use Bootstrap Magic to generate your variables.scss file
+Morover, to create your own Bootstrap theme, you can use [Bootstrap Magic](https://pikock.github.io/bootstrap-magic/) to generate your variables.scss file
 ### WordPress snippets
 If you're not comfortable with WordPress snippets to add components and customize them, you can use [WP Hasty](https://www.wp-hasty.com/) to generate them
 
@@ -47,6 +47,9 @@ If you're not comfortable with WordPress snippets to add components and customiz
 
 
 ## Changelog
+Version 1.1
+- Gulp migration to v4.0.0
+
 Version 1.1
 - Update to Boostrap 4
 - change the theme css file from style.css to dist/css/theme.css
