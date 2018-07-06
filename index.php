@@ -15,7 +15,7 @@
 
 	else:
 
-		_e('No content found', 'bsbt');
+		_e('No content found', I18N_DOMAIN );
 
 	endif;
 	?>

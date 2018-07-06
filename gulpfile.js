@@ -106,7 +106,7 @@ gulp.task( 'watch', function() {
     //
     gulp.watch( 'assets/scss/**/*.scss').on('all', gulp.series('sass') );
     gulp.watch( 'assets/js/**/*.js' ).on('all', gulp.series('js') );
-    gulp.watch( 'assets/img//*.{png,jpg,gif}' ).on('all', gulp.series('img') );
+    gulp.watch( 'assets/img/*.{png,jpg,gif}' ).on('all', gulp.series('img') );
 });
 
 /**

@@ -1,16 +1,20 @@
 /**
- * Variables, override bootstrap variables
- */
-@import "base/_variables";
-
-/**
  * Bootstrap
  */
-// Required
+// Bootstrap Required
 @import "../../node_modules/bootstrap/scss/functions";
 @import "../../node_modules/bootstrap/scss/variables";
 @import "../../node_modules/bootstrap/scss/mixins";
 
+/**
+ * Variables, override bootstrap variables
+ */
+@import "base/_variables";
+
+
+/**
+ * Bootstrap
+ */
 // Optional - comment what you doesn't need
 @import "../../node_modules/bootstrap/scss/root";
 @import "../../node_modules/bootstrap/scss/reboot";

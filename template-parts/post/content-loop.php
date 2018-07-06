@@ -6,6 +6,6 @@
 		<?php the_excerpt(); ?>
 	</section>
 	<a href="<?php the_permalink(); ?>" class="read-more">
-		<?php _e( 'Read more', 'bsbt' ); //@TODO : change i18n domain name to yours ?>
+		<?php _e( 'Read more', I18N_DOMAIN ); //@TODO : change i18n domain name to yours ?>
 	</a>
 </article>

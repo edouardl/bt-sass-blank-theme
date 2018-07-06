@@ -13,7 +13,7 @@ endif;
 			<?php
 			$comments_number = get_comments_number();
 			if ( '1' === $comments_number ):
-				printf( _x( 'One Reply to &ldquo;%s&rdquo;', 'comments title', 'bsbt' ), get_the_title() ); //@TODO : change i18n domain name to yours
+				printf( _x( 'One Reply to &ldquo;%s&rdquo;', 'comments title', I18N_DOMAIN ), get_the_title() );
 			else:
 				printf(
 					_nx(
@@ -21,7 +21,7 @@ endif;
 						'%1$s Replies to &ldquo;%2$s&rdquo;',
 						$comments_number,
 						'comments title',
-						'bsbt' //@TODO : change i18n domain name to yours
+						I18N_DOMAIN
 					),
 					number_format_i18n( $comments_number ),
 					get_the_title()
@@ -34,14 +34,14 @@ endif;
         </ol><!-- .commentlist -->
 
         <?php the_comments_pagination( array(
-			'prev_text' => '<span class="screen-reader-text">' . __( 'Previous', 'bsbt' ) . '</span>', //@TODO : change i18n domain name to yours
-			'next_text' => '<span class="screen-reader-text">' . __( 'Next', 'bsbt' ) . '</span>', //@TODO : change i18n domain name to yours
+			'prev_text' => '<span class="screen-reader-text">' . __( 'Previous', I18N_DOMAIN ) . '</span>',
+			'next_text' => '<span class="screen-reader-text">' . __( 'Next', I18N_DOMAIN ) . '</span>',
 		) );
         ?>
 
         <?php if( !comments_open() && get_comments_number() && post_type_supports( get_post_type(), 'comments' ) ) : ?>
 			<p class="no-comments">
-				<?php _e( 'Comments are closed.', 'bsbt' ); ?><?php //@TODO : change i18n domain name to yours ?>
+				<?php _e( 'Comments are closed.', I18N_DOMAIN ); ?>
 			</p>
 		<?php endif; ?>
 

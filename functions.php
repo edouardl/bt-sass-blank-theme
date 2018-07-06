@@ -1,4 +1,7 @@
 <?php
+// Load constants first
+include('inc/constants.php');
+
 // Include your functions files here
 include('inc/enqueues.php');
 include('inc/excerpt.php');
@@ -43,7 +46,7 @@ if( !isset( $content_width ) ) {
  *
  */
 register_nav_menus( array(
-    'main_menu' => __( 'Main menu', 'bsbt' ) //@TODO : change i18n domain name to yours
+    'main_menu' => __( 'Main menu', I18N_DOMAIN ) //@TODO : change i18n domain name to yours
 ) );
 
 
@@ -58,7 +61,7 @@ function theme_register_sidebars() {
         return;
     }
     register_sidebar( array(
-        'name' => __('Main sidebar', 'bsbt'), // @TODO : change i18n domain to yours
+        'name' => __('Main sidebar', I18N_DOMAIN ), 
         'id' => 'main-sidebar',
         'description' => '',
         'before_widget' => '<div id="%1$s" class="widget %2$s">',
