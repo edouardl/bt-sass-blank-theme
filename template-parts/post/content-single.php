@@ -1,4 +1,4 @@
-<article <?php post_class( 'entry' ); ?> id="post-<?php the_ID(); ?>" role="article">
+<article <?php post_class( array('entry') ); ?> id="post-<?php the_ID(); ?>" role="article">
 	<h1 class="entry-title"><?php the_title(); ?></h1>
 	<?php the_tags(); ?>
 	<section class="entry-content">

@@ -45,8 +45,9 @@ if( !isset( $content_width ) ) {
  * cf : http://codex.wordpress.org/Function_Reference/wp_nav_menu
  *
  */
+//@TODO : declare your menus here
 register_nav_menus( array(
-    'main_menu' => __( 'Main menu', I18N_DOMAIN ) //@TODO : change i18n domain name to yours
+    'main_menu' => __( 'Main menu', I18N_DOMAIN ) 
 ) );
 
 
@@ -60,6 +61,7 @@ function theme_register_sidebars() {
     if( !function_exists( 'register_sidebar' ) ) {
         return;
     }
+    //@TODO : declare your sidebar here
     register_sidebar( array(
         'name' => __('Main sidebar', I18N_DOMAIN ), 
         'id' => 'main-sidebar',
@@ -70,7 +72,7 @@ function theme_register_sidebars() {
         'after_title' => '</h3>',
     ) );
 }
-add_action( 'widgets_init', 'theme_register_sidebars' );
+//add_action( 'widgets_init', 'theme_register_sidebars' ); //@TODO : uncomment if you're need sidebar(s)
 
 
 /**

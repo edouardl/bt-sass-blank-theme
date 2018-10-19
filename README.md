@@ -9,6 +9,7 @@ It's a blank theme, you don't need to delete any code, just add yours.
 - know Sass
 - npm installed
 - git installed
+- update to Gulp 4 if you have version >4.0 installed
 - active WordPress installation
 - (optional) livereload plugin installed in your browser
 
@@ -47,7 +48,10 @@ If you're not comfortable with WordPress snippets to add components and customiz
 
 
 ## Changelog
-Version 1.1
+Version 1.3
+- Bootstrap and others dependencies update
+
+Version 1.2
 - Gulp migration to v4.0.0
 
 Version 1.1
