@@ -48,6 +48,9 @@ If you're not comfortable with WordPress snippets to add components and customiz
 
 
 ## Changelog
+Version 1.4
+- PSR2 format and useless elements removal
+
 Version 1.3
 - Bootstrap and others dependencies update
 

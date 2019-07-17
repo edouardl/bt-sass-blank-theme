@@ -1,6 +1,6 @@
 dist
 node_modules
-
+.idea
 .idea/vcs.xml
 
 .idea/modules.xml
