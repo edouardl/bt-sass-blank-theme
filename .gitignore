@@ -1,2 +1,14 @@
 dist
 node_modules
+
+.idea/vcs.xml
+
+.idea/modules.xml
+
+.idea/bt-sass-blank-theme.iml
+
+.idea/codeStyles/codeStyleConfig.xml
+
+.idea/deployment.xml
+
+.idea/misc.xml
