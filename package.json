@@ -1,6 +1,6 @@
 {
   "name": "bt-sass-blank-theme",
-  "version": "1.0.0",
+  "version": "1.4.1",
   "private": true,
   "description": "A minimal WordPress blank theme for developpers including Bootstrap-sass and using Gulp",
   "main": "gulpfile.js",
